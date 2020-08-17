@@ -1,0 +1,7 @@
+[$Version]
+update_info=okular.upd:annotation-toolbar
+
+[Document]
+ChangeColors=true
+PaperColor=204,232,207
+RenderMode=Paper

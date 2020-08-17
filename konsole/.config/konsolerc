@@ -15,6 +15,5 @@ ToolBarsMovable=Disabled
 Width 1920=1177
 
 [Notification Messages]
-CloseAllEmptyTabs=false
-CloseAllTabs=false
-CloseSingleTab=true
+CloseAllEmptyTabs=true
+CloseAllTabs=true
