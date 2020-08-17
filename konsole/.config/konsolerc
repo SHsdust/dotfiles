@@ -1,0 +1,20 @@
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[DownloadDialog Settings]
+Height 1080=508
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=Profile 1.profile
+
+[MainWindow]
+Height 1080=866
+State=AAAA/wAAAAD9AAAAAAAABJkAAANCAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1177
+
+[Notification Messages]
+CloseAllEmptyTabs=false
+CloseAllTabs=false
+CloseSingleTab=true
