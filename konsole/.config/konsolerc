@@ -10,10 +10,9 @@ Favorites=Profile 1.profile
 
 [MainWindow]
 Height 1080=866
-State=AAAA/wAAAAD9AAAAAAAABJkAAANCAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABK0AAANCAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1177
+Width 1920=1197
 
 [Notification Messages]
 CloseAllEmptyTabs=true
-CloseAllTabs=true
