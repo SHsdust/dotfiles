@@ -1,6 +1,12 @@
+# ----------------------------------------------------------------------------
+#  zsh theme
+# ----------------------------------------------------------------------------
 export ZSH="/home/emrys/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
+# ----------------------------------------------------------------------------
+#  oh-my-zsh plugins
+# ----------------------------------------------------------------------------
 plugins=(
     git
     extract
@@ -9,6 +15,9 @@ plugins=(
     zsh-autosuggestions
 )
 
+# ----------------------------------------------------------------------------
+#  alias stuff
+# ----------------------------------------------------------------------------
 
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
@@ -16,12 +25,38 @@ alias unsetproxy="unset ALL_PROXY"
 alias vi="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 
-# pyenv
+alias cv="/usr/bin/ydcv"
+
+# ----------------------------------------------------------------------------
+#  pyenv configure
+# ----------------------------------------------------------------------------
+export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-# pip zsh completion start
+# for subcommand completion
+if [[ ! -o interactive ]]; then
+    return
+fi
+
+compctl -K _pyenv pyenv
+
+_pyenv() {
+  local words completions
+  read -cA words
+
+  if [ "${#words}" -eq 2 ]; then
+    completions="$(pyenv commands)"
+  else
+    completions="$(pyenv completions ${words[2,-2]})"
+  fi
+
+  reply=(${(ps:\n:)completions})
+}
+
+# ----------------------------------------------------------------------------
+#  pip subcommand completion
+# ----------------------------------------------------------------------------
 function _pip_completion {
   local words cword
   read -Ac words
@@ -31,8 +66,9 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
-# pip zsh completion end
 
-
+# ----------------------------------------------------------------------------
+#  execute sth
+# ----------------------------------------------------------------------------
 source $ZSH/oh-my-zsh.sh
 source ~/.zshenv
