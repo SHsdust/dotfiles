@@ -1,19 +1,34 @@
 # ----------------------------------------------------------------------------
-#  zsh theme
+#  source sth
 # ----------------------------------------------------------------------------
-export ZSH="/home/emrys/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+source ~/.zshenv
+source "${HOME}/.zgen/zgen.zsh"
 
 # ----------------------------------------------------------------------------
-#  oh-my-zsh plugins
+#  zgen config
 # ----------------------------------------------------------------------------
-plugins=(
-    git
-    extract
-    zsh-syntax-highlighting
-    autojump
-    zsh-autosuggestions
-)
+if ! zgen saved; then
+    echo "Creating a zgen save"
+
+    zgen oh-my-zsh
+
+    # plugins
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/extract
+    zgen oh-my-zsh plugins/autojump
+
+    zgen load zsh-users/zsh-autosuggestions
+    zgen load zsh-users/zsh-syntax-highlighting
+
+    # completions
+    zgen load zsh-users/zsh-completions src
+
+    # theme
+    zgen oh-my-zsh themes/robbyrussell
+
+    # save all to init script
+    zgen save
+fi
 
 # ----------------------------------------------------------------------------
 #  alias stuff
@@ -28,7 +43,7 @@ alias vim="/usr/bin/nvim"
 alias cv="/usr/bin/ydcv"
 
 # ----------------------------------------------------------------------------
-#  pyenv configure
+#  pyenv config
 # ----------------------------------------------------------------------------
 export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
@@ -66,9 +81,3 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
-
-# ----------------------------------------------------------------------------
-#  execute sth
-# ----------------------------------------------------------------------------
-source $ZSH/oh-my-zsh.sh
-source ~/.zshenv
