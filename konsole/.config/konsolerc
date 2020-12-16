@@ -9,10 +9,32 @@ Width 1920=700
 Favorites=Profile 1.profile
 
 [MainWindow]
-Height 1080=866
-State=AAAA/wAAAAD9AAAAAAAABK0AAANCAAAABAAAAAQAAAAIAAAACPwAAAAA
+HDMI-A-0 Height 1440=828
+HDMI-A-0 Width 2560=1106
+HDMI-A-0 XPosition=700
+HDMI-A-0 YPosition=267
+HDMI-A-0 eDP Height 1080=841
+HDMI-A-0 eDP Height 1440=843
+HDMI-A-0 eDP Width 1920=1147
+HDMI-A-0 eDP Width 2560=1133
+HDMI-A-0 eDP XPosition=730
+HDMI-A-0 eDP YPosition=222
+Height 1080=840
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAABFIAAAMbAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1197
+Width 1920=1188
+eDP HDMI-A-0 Height 1080=841
+eDP HDMI-A-0 Width 1920=1147
+eDP HDMI-A-0 XPosition=634
+eDP HDMI-A-0 YPosition=191
+eDP Height 1080=827
+eDP Height 1920=827
+eDP Width 1080=1080
+eDP Width 1920=1106
+eDP XPosition=411
+eDP YPosition=103
 
 [Notification Messages]
 CloseAllEmptyTabs=true
+CloseAllTabs=true
