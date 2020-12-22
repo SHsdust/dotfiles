@@ -41,6 +41,7 @@ alias vi="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 
 alias cv="/usr/bin/ydcv"
+alias pc="/usr/bin/proxychains4"
 
 # ----------------------------------------------------------------------------
 #  pyenv config
