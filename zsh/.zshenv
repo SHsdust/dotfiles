@@ -13,7 +13,7 @@ export PATH
 # export QT_IM_MODULE=fcitx
 # export MODIFIERS=@im=fcitx
 
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
+# export GTK_IM_MODULE=fcitx
+# export QT_IM_MODULE=fcitx
 export XMODIFIERS=\@im=fcitx
-export SDL_IM_MODULE=fcitx
+# export SDL_IM_MODULE=fcitx

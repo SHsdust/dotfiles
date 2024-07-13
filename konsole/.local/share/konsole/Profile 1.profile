@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Breeze
-Font=Iosevka SS10,16,-1,5,50,0,0,0,0,0
+Font=Iosevka SS10,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [General]
 Name=Profile 1

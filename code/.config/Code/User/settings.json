@@ -1,6 +1,9 @@
 {
     "editor.fontFamily": "'Iosevka ss10'",
-    "editor.fontSize": 20,
-    "workbench.colorTheme": "Verdandi",
-    "git.ignoreLegacyWarning": true
+    "editor.fontSize": 16,
+    "git.ignoreLegacyWarning": true,
+    "files.maxMemoryForLargeFilesMB": 21000,
+    "editor.cursorStyle": "block",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Default Dark+"
 }

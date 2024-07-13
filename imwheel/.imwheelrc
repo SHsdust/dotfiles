@@ -6,11 +6,7 @@
     Control_L, Up,   Control_L|Button4
     Control_L, Down, Control_L|Button5
 
-"^spotify$"
-    None, Up, Button4, 3
-    None, Down, Button5, 3
-
-"^okular$"
+"^google-chrome$"
     None, Up, Button4, 2
     None, Down, Button5, 2
     Shift_L,   Up,   Shift_L|Button4, 4
@@ -18,7 +14,27 @@
     Control_L, Up,   Control_L|Button4
     Control_L, Down, Control_L|Button5
 
+"^spotify$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+
+"^okular$"
+    None, Up, Button4, 4
+    None, Down, Button5, 4
+    Shift_L,   Up,   Shift_L|Button4, 4
+    Shift_L,   Down, Shift_L|Button5, 4
+    Control_L, Up,   Control_L|Button4
+    Control_L, Down, Control_L|Button5
+
 "^firefox$"
+    None, Up, Button4, 1
+    None, Down, Button5, 1
+    Shift_L,   Up,   Shift_L|Button4, 4
+    Shift_L,   Down, Shift_L|Button5, 4
+    Control_L, Up,   Control_L|Button4
+    Control_L, Down, Control_L|Button5
+
+"^microsoft-edge-stable$"
     None, Up, Button4, 2
     None, Down, Button5, 2
     Shift_L,   Up,   Shift_L|Button4, 4
@@ -59,8 +75,8 @@
     Control_L, Down, Control_L|Button5
 
 "^wps$"
-    None, Up, Button4, 3
-    None, Down, Button5, 3
+    None, Up, Button4, 1
+    None, Down, Button5, 1
     Shift_L,   Up,   Shift_L|Button4, 4
     Shift_L,   Down, Shift_L|Button5, 4
     Control_L, Up,   Control_L|Button4
@@ -69,6 +85,14 @@
 "^wpp$"
     None, Up, Button4, 5
     None, Down, Button5, 5
+    Shift_L,   Up,   Shift_L|Button4, 4
+    Shift_L,   Down, Shift_L|Button5, 4
+    Control_L, Up,   Control_L|Button4
+    Control_L, Down, Control_L|Button5
+
+"^zeal$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
     Shift_L,   Up,   Shift_L|Button4, 4
     Shift_L,   Down, Shift_L|Button5, 4
     Control_L, Up,   Control_L|Button4

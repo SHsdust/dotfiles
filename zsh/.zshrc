@@ -1,6 +1,7 @@
 # ----------------------------------------------------------------------------
 #  source sth
 # ----------------------------------------------------------------------------
+export DISABLE_AUTO_UPDATE="true"
 source ~/.zshenv
 source "${HOME}/.zgen/zgen.zsh"
 
@@ -24,7 +25,8 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-completions src
 
     # theme
-    zgen oh-my-zsh themes/robbyrussell
+    # zgen oh-my-zsh themes/robbyrussell
+    zgen oh-my-zsh themes/daily
 
     # save all to init script
     zgen save
@@ -34,7 +36,7 @@ fi
 #  alias stuff
 # ----------------------------------------------------------------------------
 
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias setproxy="ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
 
 alias vi="/usr/bin/nvim"
@@ -42,33 +44,6 @@ alias vim="/usr/bin/nvim"
 
 alias cv="/usr/bin/ydcv"
 alias pc="/usr/bin/proxychains4"
-
-# ----------------------------------------------------------------------------
-#  pyenv config
-# ----------------------------------------------------------------------------
-export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# for subcommand completion
-if [[ ! -o interactive ]]; then
-    return
-fi
-
-compctl -K _pyenv pyenv
-
-_pyenv() {
-  local words completions
-  read -cA words
-
-  if [ "${#words}" -eq 2 ]; then
-    completions="$(pyenv commands)"
-  else
-    completions="$(pyenv completions ${words[2,-2]})"
-  fi
-
-  reply=(${(ps:\n:)completions})
-}
 
 # ----------------------------------------------------------------------------
 #  pip subcommand completion
@@ -82,3 +57,15 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
+
+# ----------------------------------------------------------------------------
+#  zsh_history size
+# ----------------------------------------------------------------------------
+HISTFILE=~/.zsh_history
+HISTSIZE=2147483647
+SAVEHIST=$HISTSIZE
+
+# ----------------------------------------------------------------------------
+#  miniconda
+# ----------------------------------------------------------------------------
+source /opt/miniconda/etc/profile.d/conda.sh

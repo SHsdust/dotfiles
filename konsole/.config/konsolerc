@@ -8,33 +8,75 @@ Width 1920=700
 [Favorite Profiles]
 Favorites=Profile 1.profile
 
+[General]
+ConfigVersion=1
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
 [MainWindow]
+1920x1080 screen: Height=792
+1920x1080 screen: Width=988
+1920x1080 screen: XPosition=466
+1920x1080 screen: YPosition=134
+2 screens: Height=644
+2 screens: Width=988
+2560x1440 screen: Height=791
+2560x1440 screen: Width=988
+2560x1440 screen: XPosition=786
+2560x1440 screen: YPosition=315
+HDMI-A-0=HDMI-A-0
 HDMI-A-0 Height 1440=828
 HDMI-A-0 Width 2560=1106
 HDMI-A-0 XPosition=700
 HDMI-A-0 YPosition=267
 HDMI-A-0 eDP Height 1080=841
 HDMI-A-0 eDP Height 1440=843
+HDMI-A-0 eDP Height 1920x1080=817
 HDMI-A-0 eDP Width 1920=1147
+HDMI-A-0 eDP Width 1920x1080=1022
 HDMI-A-0 eDP Width 2560=1133
 HDMI-A-0 eDP XPosition=730
+HDMI-A-0 eDP XPosition 1920x1080=430
 HDMI-A-0 eDP YPosition=222
+HDMI-A-0 eDP YPosition 1920x1080=124
 Height 1080=840
+MenuBar=Disabled
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABBoAAALwAAAABAAAAAQAAAAIAAAACPwAAAAA
+StatusBar=Disabled
 ToolBarsMovable=Disabled
 Width 1920=1188
+eDP=eDP
 eDP HDMI-A-0 Height 1080=841
+eDP HDMI-A-0 Height 1920x1080=817
 eDP HDMI-A-0 Width 1920=1147
+eDP HDMI-A-0 Width 1920x1080=1022
 eDP HDMI-A-0 XPosition=634
+eDP HDMI-A-0 XPosition 1920x1080=483
 eDP HDMI-A-0 YPosition=191
-eDP Height 1080=784
+eDP HDMI-A-0 YPosition 1920x1080=147
+eDP Height 1080=785
 eDP Height 1920=827
+eDP Height 1920x1080=791
+eDP Height 1920x1080 eDP=791
+eDP Height 640x480=403
 eDP Width 1080=1080
 eDP Width 1920=1050
-eDP XPosition=326
-eDP YPosition=105
+eDP Width 1920x1080=988
+eDP Width 1920x1080 eDP=988
+eDP Width 640x480=640
+eDP XPosition=420
+eDP XPosition 1920x1080=399
+eDP XPosition 1920x1080 eDP=466
+eDP XPosition 640x480=0
+eDP YPosition=155
+eDP YPosition 1920x1080=124
+eDP YPosition 1920x1080 eDP=135
+eDP YPosition 640x480=29
 
 [Notification Messages]
 CloseAllEmptyTabs=true
 CloseAllTabs=true
+
+[UiSettings]
+ColorScheme=
