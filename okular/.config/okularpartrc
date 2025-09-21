@@ -10,6 +10,7 @@ PaperColor=204,232,207
 RenderMode=Paper
 
 [Main View]
+ShowLeftPanel=false
 SplitterSizes=377,1542
 
 [Reviews]

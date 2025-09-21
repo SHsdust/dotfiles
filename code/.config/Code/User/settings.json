@@ -1,9 +1,9 @@
 {
     "editor.fontFamily": "'Iosevka ss10'",
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "git.ignoreLegacyWarning": true,
     "files.maxMemoryForLargeFilesMB": 21000,
     "editor.cursorStyle": "block",
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Default Dark+"
+    "git.autofetch": true
 }
